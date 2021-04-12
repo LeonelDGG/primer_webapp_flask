@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Registro de alumnos {% endblock %}
+
+{% block content %}
+<form action="" method="POST">
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" /><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" /><br>
+    <input type="submit" name="signup" value="Registrar" />
+</form>
+{% endblock %}
