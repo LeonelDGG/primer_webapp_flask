@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %} Registro de alumnos {% endblock %}
+
+{% block content %}
+
+
+{% for campo, errores in formulario.errors.items() %}
+	<div style="color: red;">
+		{{ form[campo].label }}: {{ ', '.join(errores) }}
+	</div>
+{% endfor %}
+
+<form action="" method="POST">
+    {{formulario.csrf_token}}
+
+    {{ formulario.nombre.label() }} {{formulario.nombre()}}
+    <br>
+    {{ formulario.calificacion.label() }} {{formulario.calificacion()}}
+    <br>
+    {{ formulario.email.label() }} {{formulario.email()}}
+    <br>
+    {{ formulario.submit()}}
+</form>
+
+{% endblock %}
