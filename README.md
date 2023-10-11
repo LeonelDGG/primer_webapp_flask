@@ -1,15 +1,46 @@
-# Mi primer Web App con Flask
+# Serie: Mi primer Web App con Flask
 
-Codigo de la serie de "Mi primer Web App con Flask"
+El contenido de este repositorio, es de la serie "Mi primer Web App con Flask" escrita por mi.
+En esta serie abarcamos lo basico de Flask, desde su instalacion hasta el desarrollo final de esta app.
 
-Si estas interesado en leerla, te recomiendo que te des una vuelta por [aca](https://dev.to/gareisdev/series/11860)
+Si estas interesado en leerla, te dejo el [link](https://dev.to/gareisdev/series/11860)
 
-## Probando el codigo
+## Correr el proyecto
 
-Antes de intentar ejecutar el codigo, recomiendo que inicies un virtual environment e instales las dependencias necesarias:
+Mi recomendacion, es que crees un entorno virtual usando virtualenv o petry (el que mas te guste). Si no conoces ninguno, te dejo los links para que le des una leida (creeme que es de mucha utilidad):
+
++ [virtualenv](https://virtualenv.pypa.io/en/latest/)
++ [poetry](https://python-poetry.org/docs/)
+
+### Instalar dependencias con virtualenv
+
+```bash
+virtualenv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+```bash
+pip install -r requirements.txt
+```
 
 ```python
 pip install -r requirements.txt
 ```
 
-Luego, abri una de las carpetas de interes y ejecuta el app.py dentro de ella.
+### Instalar dependencias con poetry
+
+```bash
+cat requirements.txt | xargs poetry add
+```
+
+### Iniciar el servidor
+
+Elige una de las "partes" de la serie de tu interes y muevete dentro de ella.
+Finalmente corre el siguiente comando:
+
+```bash
+python app.py
+```
